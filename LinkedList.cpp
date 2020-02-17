@@ -74,7 +74,7 @@ public:
 
 	void remove(int index) {
 		if (index == 0) {
-			f
+			//TODO
 		}
 		else {
 
