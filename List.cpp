@@ -1,8 +1,6 @@
 #include <iostream>
-#include <algorithm>
 
-class List
-{
+class List {
 public:
 	class ListElt {
 	public:
@@ -16,13 +14,11 @@ public:
 	};
 	ListElt* first;
 
-	List()
-	{
+	List() {
 		first = 0;
 	}
 
-	~List()
-	{
+	~List() {
 		ListElt* currNode;
 		while (first) {
 			currNode = first;
