@@ -1,6 +1,12 @@
 #include <iostream>
 
-class List {
+/**
+ * @author Zahar
+ * @date 15.03.2020
+ *
+ * Лаба #3
+*/
+class LinkedList {
 public:
     /**
      * Вложенный класс, который хранит адрес след. элемента(Node - ноды) и значение текущего.
@@ -33,18 +39,18 @@ public:
      * Создаем класс-обертку, который будет работать с Node.
      * Значение первого элемента устанавливается на nullptr
      */
-    List() {
+    LinkedList() {
         first = nullptr;
     }
 
     /**
-     * Конструктор №2 (Конструктор принимающий текущее значение)
-     * @param num - текущий элемент
+     * Конструктор №2 (Конструктор принимающий значение первого элемента)
+     * @param num - первый элемент
      *
      * Создаем класс-обертку, который будет работать с Node.
      * Значение второго элемента устанавливается на nullptr(его отсутсвие).
     */
-    List(int num) {
+    LinkedList(int num) {
         first->data = num;
         first->next = nullptr;
     }
@@ -52,7 +58,7 @@ public:
     /**
      * Деструктор. Удаляем всю цепочку элменетов массива
      */
-    ~List() {
+    ~LinkedList() {
         Node *currNode;
         while (first) {
             currNode = first;
@@ -63,7 +69,7 @@ public:
 
     /**
      * @param num число, добавляемое в начало
-     * 
+     *
      * Создаем новый элемент, в после next передаем текущий элемент, а в data - записываем число, переданное в параметре
      */
     void appendFirst(int num) {
@@ -74,7 +80,7 @@ public:
 
     /**
      * @param num число, добавляемое в конец
-     * 
+     *
     */
     void appendEnd(int num) {
         if (!first)
@@ -93,8 +99,9 @@ public:
      */
     void printer() {
         for (Node *curr = first; curr; curr = curr->next) {
-            std::cout << curr->data << ", ";
+            std::cout << curr->data;
         }
+        std::cout << std::endl;
     }
 
     /**
@@ -110,14 +117,3 @@ public:
     }
 };
 
-int main() {
-    List *list = new List();
-    list->appendEnd(123);
-    list->appendEnd(456);
-    list->appendFirst(789);
-    list->printer();
-
-    // Вызываем деструктор
-    delete list;
-    return 0;
-}
