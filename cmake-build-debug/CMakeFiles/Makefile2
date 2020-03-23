@@ -34,10 +34,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,12 +73,12 @@ preinstall:
 CMakeFiles/untitled1.dir/all:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/depend
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target untitled1"
 .PHONY : CMakeFiles/untitled1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/untitled1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/untitled1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/untitled1.dir/rule

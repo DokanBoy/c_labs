@@ -5,7 +5,10 @@ CMakeFiles/untitled1.dir/LinkedList.cpp.obj: ../LinkedList.cpp
 
 CMakeFiles/untitled1.dir/Main.cpp.obj: ../LinkedList.cpp
 CMakeFiles/untitled1.dir/Main.cpp.obj: ../Main.cpp
+CMakeFiles/untitled1.dir/Main.cpp.obj: ../Queue.cpp
 CMakeFiles/untitled1.dir/Main.cpp.obj: ../Stack.cpp
+
+CMakeFiles/untitled1.dir/Queue.cpp.obj: ../Queue.cpp
 
 CMakeFiles/untitled1.dir/Stack.cpp.obj: ../Stack.cpp
 

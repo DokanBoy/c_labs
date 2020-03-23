@@ -1,16 +1,21 @@
 #include <iostream>
-#include "LinkedList.cpp"
 #include "Stack.cpp"
+#include "Queue.cpp"
+#include "LinkedList.cpp"
 
+/**
+ * Примеры использования односвязного списка и стэка
+ */
 int main() {
-/*    auto *list = new LinkedList();
+    LinkedList *list = new LinkedList();
     list->appendEnd(123);
     list->appendEnd(456);
     list->appendFirst(789);
     list->printer();
-    delete list;*/
 
-    auto *stack = new Stack();
+    delete list;
+
+    Stack *stack = new Stack();
     stack->push(10);
     stack->push(5);
     stack->push(6);
@@ -22,5 +27,25 @@ int main() {
 
     delete stack;
 
+    Queue *queue = new Queue();
+    queue->push(123);
+    queue->push(321);
+    queue->push(456);
+    std::cout << queue->front();
+    queue->back();
+    std::cout << queue->back();
+    if (queue->inQueue(123)) {
+        std::cout << "DA EST" << std::endl;
+    } else {
+        std::cout << "NET" << std::endl;
+    }
+
+    std::cout << queue->size();
+
+    delete queue;
+
     return 0;
 }
+
+
+
