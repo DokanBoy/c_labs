@@ -2,17 +2,24 @@
 #include <string>
 #include <regex>
 
+#define PLUS_MINUS_PRIORITY = 1;
+#define MULTIPLICATION_DIVISION_PRIORITY = 2;
+#define BRACKETS_PRIORITY = 3;
+
 /**
  * Стэковый калькулятор
  *
  * @see https://www.youtube.com/watch?v=Vk-tGND2bfc&t=175s
  */
+
+
 class StackCalculator {
 private:
     Stack<int> *nums{};
     Stack<char> *operators{};
-
+    int answer{};
     const std::string DEBUG_LOG = "DEBUG: ";
+
 
     void parse(const std::string &expression) {
         std::string builder{};
@@ -43,6 +50,11 @@ private:
         }
     }
 
+    int calculate() {
+
+        return nums->top();
+    }
+
 public:
     StackCalculator() {
         std::cerr << "Not enough parameters" << std::endl;
@@ -54,11 +66,11 @@ public:
             return;
         }
 
-
         nums = new Stack<int>();
         operators = new Stack<char>();
 
         parse(inputExpression);
+        answer = calculate();
 
         nums->printer();
         operators->printer();
@@ -95,5 +107,9 @@ public:
                (element == '7') ||
                (element == '8') ||
                (element == '9');
+    }
+
+    [[nodiscard]] int getAnswer() const {
+        return answer;
     }
 };
