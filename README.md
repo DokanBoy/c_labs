@@ -1,9 +1,13 @@
 # c_labs
-Simple aglos. Laboratory work in C++. HCI NSU.
+Basic aglos. Laboratory work in C++. HCI NSU.
 
-### Output log
+### Input data
 ```
-Illegal char in 10 position!
-21 1 2 2
-(
+21+2341*(2*2)
+```
+
+### Output data
+```
+21 2341 2 2
++ * ( * )
 ```
