@@ -13,12 +13,12 @@ iostream
 C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp
 iostream
 -
-Stack.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
 Queue.cpp
 C:/Users/Zahar/CLionProjects/labs/untitled1/Queue.cpp
 LinkedList.cpp
 C:/Users/Zahar/CLionProjects/labs/untitled1/LinkedList.cpp
+StackCalculator.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/StackCalculator.cpp
 
 C:/Users/Zahar/CLionProjects/labs/untitled1/Queue.cpp
 iostream
@@ -26,5 +26,11 @@ iostream
 
 C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
 iostream
+-
+
+C:/Users/Zahar/CLionProjects/labs/untitled1/StackCalculator.cpp
+Stack.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
+string
 -
 

@@ -9,10 +9,11 @@
  * Создаем пустой массив, а потом с помощью метода push можно будет запихивать элементы.
  * С помощью pop получаем и удаляем верхний элемент. С помощью top получаем верхний элемент
 */
+template<typename T>
 class Stack {
 private:
     // Начальный размер стэка.
-    const int DEFAULT_LENGTH = 5;
+    const int DEFAULT_LENGTH = 100;
 
     // Текущий размер стэка
     int currentMaxSize = DEFAULT_LENGTH;
@@ -20,14 +21,14 @@ private:
     int currentSize = 0;
 
     // тот самый массив, куда будем запихивать новые элементы
-    int *array;
+    T *array;
 
     /**
      * Увеличиваем массив на 10 элементов
      */
     void grow() {
         currentMaxSize += 10;
-        int *newArray = new int[currentMaxSize];
+        T *newArray = new T[currentMaxSize];
 
         for (int i = 0; i < currentSize; ++i) {
             newArray[i] = array[i];
@@ -39,12 +40,13 @@ private:
     void reduce() {
         // TODO
     }
+
 public:
     /**
      * Конструктор №1 (Конструктор создающий пустой стэк)
     */
     Stack() {
-        array = new int[currentMaxSize];
+        array = new T[currentMaxSize];
     }
 
     /**
@@ -53,10 +55,9 @@ public:
      *
      * Создаем массив и пушим(запихиваем) туда наш первый элемент
     */
-    Stack(int num) {
-        array = new int[currentMaxSize];
-
-        push(num);
+    Stack(int size) {
+        currentMaxSize = size;
+        array = new T[currentMaxSize];
     }
 
     /**
@@ -69,7 +70,7 @@ public:
     /**
      * @param num элемент, который нужно запихнуть в стэк
      */
-    void push(int num) {
+    void push(T num) {
         if (currentSize >= currentMaxSize) {
             grow();
         }
@@ -82,7 +83,7 @@ public:
      * Снимаем верхний элемент в стэки
      * Получаем и удаляем(!)
      */
-    int pop() {
+    T pop() {
         return array[--currentSize];
     }
 
@@ -90,8 +91,9 @@ public:
      * Берем верхний элемент в стэки
      * Получаем без(!) удаления
      */
-    int top() {
-        return array[--currentSize];
+    T top() {
+        int temp = currentSize - 1;
+        return array[temp];
     }
 
     /**
@@ -105,7 +107,7 @@ public:
 
     /**
      * Печатаем стэк на экран.
-     * Просто проходим по каждому эмеленту и если он не nullptr, то печатаем его.
+     * Проходим по каждому эмеленту и если он не nullptr, то печатаем его.
      */
     void printer() {
         for (int i = 0; i < currentSize; ++i) {

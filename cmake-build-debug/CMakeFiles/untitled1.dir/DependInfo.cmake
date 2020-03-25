@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/Main.cpp.obj"
   "C:/Users/Zahar/CLionProjects/labs/untitled1/Queue.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/Queue.cpp.obj"
   "C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/Stack.cpp.obj"
+  "C:/Users/Zahar/CLionProjects/labs/untitled1/StackCalculator.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/StackCalculator.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
