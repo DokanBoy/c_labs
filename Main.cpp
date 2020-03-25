@@ -45,7 +45,7 @@ int main() {
 
     delete queue;*/
 
-    auto *calculator = new StackCalculator("1+1*(2*2)");
+    auto *calculator = new StackCalculator("21+1*(2*2)");
 
     delete calculator;
 

@@ -30,7 +30,7 @@ private:
                     prev = false;
                 }
             } else {
-                std::cerr << "Illegal char in " << i << " position!" << std::endl;
+                std::cerr << "Illegal char in " << i << " position! Char: " << expression[i] << std::endl;
                 return;
                 //throw "Illegal expression";
             }
@@ -67,25 +67,25 @@ public:
 
     // TODO Заменить на regex
     static bool isOperator(char element) {
-        return element == '(' ||
-               element == ')' ||
-               element == '+' ||
-               element == '-' ||
-               element == '*' ||
-               element == '/';
+        return (element == '(') ||
+               (element == ')') ||
+               (element == '+') ||
+               (element == '-') ||
+               (element == '*') ||
+               (element == '/');
     }
 
     // TODO Заменить на regex
     static bool isNum(char element) {
-        return element == '0' ||
-               element == '1' ||
-               element == '2' ||
-               element == '3' ||
-               element == '4' ||
-               element == '5' ||
-               element == '6' ||
-               element == '7' ||
-               element == '8' ||
-               element == '9';
+        return (element == '0') ||
+               (element == '1') ||
+               (element == '2') ||
+               (element == '3') ||
+               (element == '4') ||
+               (element == '5') ||
+               (element == '6') ||
+               (element == '7') ||
+               (element == '8') ||
+               (element == '9');
     }
 };
