@@ -17,10 +17,10 @@ private:
         int i = 0;
 
         while (true) {
-            if (isNum((expression[i]))) {
+            if (isNum(expression[i])) {
                 builder.append(&expression[i]);
                 prev = true;
-            } else {
+            } else if (isOperator(expression[i])) {
                 if (!prev) {
                     operators->push(expression[i]);
                     prev = false;
@@ -29,9 +29,13 @@ private:
                     builder = ""; // Или nullptr?
                     prev = false;
                 }
+            } else {
+                std::cerr << "Illegal char in " << i << " position!" << std::endl;
+                return;
+                //throw "Illegal expression";
             }
 
-            if (expression.size() == i - 1)
+            if (expression.size() == i)
                 break;
             else
                 i++;
