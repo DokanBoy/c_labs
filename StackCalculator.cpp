@@ -1,5 +1,6 @@
 #include "Stack.cpp"
 #include <string>
+#include <regex>
 
 /**
  * Стэковый калькулятор
@@ -11,8 +12,10 @@ private:
     Stack<int> *nums{};
     Stack<char> *operators{};
 
+    const std::string DEBUG_LOG = "DEBUG: ";
+
     void parse(const std::string &expression) {
-        std::string builder;
+        std::string builder{};
         bool prev = false; // Предыдущий символ - число?
 
 
@@ -20,31 +23,37 @@ private:
             if (isNum(expression[i])) {
                 builder.append(&expression[i]);
                 prev = true;
+                //std::cout << DEBUG_LOG << expression[i] << "(Line 26) prev = true" << std::endl;
             } else if (isOperator(expression[i])) {
                 if (!prev) {
+                    //std::cout << DEBUG_LOG << expression[i] << " prev = False (Line 29)" << std::endl;
                     operators->push(expression[i]);
                     prev = false;
                 } else {
+                    //std::cout << DEBUG_LOG << expression[i] << " prev = True (Line 33)" << std::endl;
                     nums->push(std::stoi(builder));
-                    builder = ""; // Или nullptr?
+                    operators->push(expression[i]);
+                    builder = "";
                     prev = false;
                 }
             } else {
                 std::cerr << "Illegal char in " << i << " position! Char: " << expression[i] << std::endl;
                 return;
-                //throw "Illegal expression";
             }
         }
     }
 
 public:
     StackCalculator() {
-        throw "Not enough parameters";
+        std::cerr << "Not enough parameters" << std::endl;
     }
 
     explicit StackCalculator(const std::string &inputExpression) {
-        if (inputExpression.empty())
-            throw "You can't pass an empty string";
+        if (inputExpression.empty()) {
+            std::cerr << "You can't pass an empty string" << std::endl;
+            return;
+        }
+
 
         nums = new Stack<int>();
         operators = new Stack<char>();
@@ -62,6 +71,8 @@ public:
 
     // TODO Заменить на regex
     static bool isOperator(char element) {
+        //std::regex operatorsRegex("()+-*/");
+        //return std::regex_match(element.begin(), element.end(), operatorsRegex);
         return (element == '(') ||
                (element == ')') ||
                (element == '+') ||
@@ -72,6 +83,8 @@ public:
 
     // TODO Заменить на regex
     static bool isNum(char element) {
+        //std::regex numsRegex("[0-9]");
+        //return std::regex_match(element.begin(), element.end(), numsRegex);
         return (element == '0') ||
                (element == '1') ||
                (element == '2') ||
