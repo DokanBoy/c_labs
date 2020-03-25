@@ -92,6 +92,9 @@
 		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp">
 			<Option target="untitled1"/>
 		</Unit>
+		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/StackCalculator.cpp">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -1,13 +1,14 @@
 #include <iostream>
-#include "Stack.cpp"
+//#include "Stack.cpp"
 #include "Queue.cpp"
 #include "LinkedList.cpp"
+#include "StackCalculator.cpp"
 
 /**
- * Примеры использования односвязного списка и стэка
+ * Примеры использования
  */
 int main() {
-    LinkedList *list = new LinkedList();
+    /*LinkedList *list = new LinkedList();
     list->appendEnd(123);
     list->appendEnd(456);
     list->appendFirst(789);
@@ -15,7 +16,7 @@ int main() {
 
     delete list;
 
-    Stack *stack = new Stack();
+    Stack<int> *stack = new Stack<int>();
     stack->push(10);
     stack->push(5);
     stack->push(6);
@@ -42,7 +43,11 @@ int main() {
 
     std::cout << queue->size();
 
-    delete queue;
+    delete queue;*/
+
+    auto *calculator = new StackCalculator("1+1*(2*2)");
+
+    delete calculator;
 
     return 0;
 }
