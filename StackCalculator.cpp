@@ -13,10 +13,10 @@ private:
 
     void parse(const std::string &expression) {
         std::string builder;
-        bool prev = false; // Предыдущий символ число?
-        int i = 0;
+        bool prev = false; // Предыдущий символ - число?
 
-        while (true) {
+
+        for (int i = 0; i < expression.length(); ++i) {
             if (isNum(expression[i])) {
                 builder.append(&expression[i]);
                 prev = true;
@@ -34,11 +34,6 @@ private:
                 return;
                 //throw "Illegal expression";
             }
-
-            if (expression.size() == i)
-                break;
-            else
-                i++;
         }
     }
 
