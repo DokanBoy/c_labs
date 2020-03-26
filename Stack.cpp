@@ -55,7 +55,7 @@ public:
      *
      * Создаем массив и пушим(запихиваем) туда наш первый элемент
     */
-    Stack(int size) {
+    explicit Stack(int size) {
         currentMaxSize = size;
         array = new T[currentMaxSize];
     }
@@ -68,14 +68,14 @@ public:
     }
 
     /**
-     * @param num элемент, который нужно запихнуть в стэк
+     * @param element элемент, который нужно запихнуть в стэк
      */
-    void push(T num) {
+    void push(T element) {
         if (currentSize >= currentMaxSize) {
             grow();
         }
 
-        array[currentSize] = num;
+        array[currentSize] = element;
         ++currentSize;
     }
 
