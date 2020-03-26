@@ -1,6 +1,4 @@
 #include <iostream>
-#include "Queue.cpp"
-#include "LinkedList.cpp"
 #include "StackCalculator.cpp"
 
 /**
