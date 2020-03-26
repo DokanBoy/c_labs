@@ -6,23 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zahar/CLionProjects/labs/untitled1/LinkedList.cpp
-iostream
--
-
 C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp
 iostream
 -
-Queue.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/Queue.cpp
-LinkedList.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/LinkedList.cpp
-StackCalculator.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/StackCalculator.cpp
+Matrix.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/Matrix.cpp
 
-C:/Users/Zahar/CLionProjects/labs/untitled1/Queue.cpp
-iostream
--
+C:/Users/Zahar/CLionProjects/labs/untitled1/Matrix.cpp
+Stack.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
 
 C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
 iostream

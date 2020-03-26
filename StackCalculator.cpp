@@ -15,54 +15,53 @@
 
 class StackCalculator {
 private:
-    const std::string DEBUG_LOG = "DEBUG: ";
-
     Stack<int> *nums{};
     Stack<char> *operators{};
     int answer{};
 
+    int getOperatorPriority(char element) {
+        switch (element) {
+            case '(' :
+                return 1;
+            case ')' :
+                return 2;
+            case '=' :
+                return 3;
+            case '+' :
+            case '-' :
+                return 4;
+            case '*' :
+            case '/' :
+                return 5;
+            case '^' :
+                return 6;
+            default:
+                return 0;
+        }
+    }
+
     void parse(const std::string &expression) {
         std::string builder{};
-        bool prev = false; // Предыдущий символ - число?
+        bool prevIsNum = false; // Предыдущий символ - число?
 
-        // Проверка на кол-во скобочек
-        //validate(expression);
-
-        // аналог цикла for (int i = 0; i < expression.length(); ++i).
-        // В этом цикле, i = expression[i]
         for (const char &i : expression) {
             if (isNum(i)) {
                 builder.append(&i);
-                prev = true;
-                //std::cout << DEBUG_LOG << expression[i] << "(Line 26) prev = true" << std::endl;
+                prevIsNum = true;
             } else if (isOperator(i)) {
-                if (!prev) {
-                    //std::cout << DEBUG_LOG << expression[i] << " prev = False (Line 29)" << std::endl;
+                if (!prevIsNum) {
                     operators->push(i);
-                    prev = false;
+                    prevIsNum = false;
                 } else {
-                    //std::cout << DEBUG_LOG << expression[i] << " prev = True (Line 33)" << std::endl;
                     nums->push(std::stoi(builder));
                     operators->push(i);
                     builder.clear();
-                    prev = false;
+                    prevIsNum = false;
                 }
             }
         }
         nums->push(std::stoi(builder));
     }
-    // TODO
-/*    bool validate(const std::string &expression) {
-        auto *brackets = new Stack<char>;
-
-        for (char i : expression) {
-            if (isBracket(i)) {
-                if (!brackets->isEmpty() && )
-                brackets->push(i);
-            }
-        }
-        return false;
-    }*/
 
     // Тута считаем из наших стеков
     int calculate() {

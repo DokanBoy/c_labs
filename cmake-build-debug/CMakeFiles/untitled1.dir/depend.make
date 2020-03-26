@@ -3,11 +3,12 @@
 
 CMakeFiles/untitled1.dir/LinkedList.cpp.obj: ../LinkedList.cpp
 
-CMakeFiles/untitled1.dir/Main.cpp.obj: ../LinkedList.cpp
 CMakeFiles/untitled1.dir/Main.cpp.obj: ../Main.cpp
-CMakeFiles/untitled1.dir/Main.cpp.obj: ../Queue.cpp
+CMakeFiles/untitled1.dir/Main.cpp.obj: ../Matrix.cpp
 CMakeFiles/untitled1.dir/Main.cpp.obj: ../Stack.cpp
-CMakeFiles/untitled1.dir/Main.cpp.obj: ../StackCalculator.cpp
+
+CMakeFiles/untitled1.dir/Matrix.cpp.obj: ../Matrix.cpp
+CMakeFiles/untitled1.dir/Matrix.cpp.obj: ../Stack.cpp
 
 CMakeFiles/untitled1.dir/Queue.cpp.obj: ../Queue.cpp
 

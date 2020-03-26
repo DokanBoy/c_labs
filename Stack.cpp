@@ -37,6 +37,9 @@ private:
         array = newArray;
     }
 
+    /**
+     * Уменьшаем массив на 10 элементов
+     */
     void reduce() {
         // TODO
     }
@@ -92,8 +95,7 @@ public:
      * Получаем без(!) удаления
      */
     T top() {
-        int temp = currentSize - 1;
-        return array[temp];
+        return array[currentSize - 1];
     }
 
     /**
@@ -114,5 +116,13 @@ public:
             std::cout << array[i] << " ";;
         }
         std::cout << std::endl;
+    }
+
+    T *getAsArray() {
+        return array;
+    }
+
+    T getByIndex(unsigned int index) {
+        return array[index];
     }
 };

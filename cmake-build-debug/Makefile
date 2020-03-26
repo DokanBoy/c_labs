@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.10\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.10\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.10\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.10\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -176,6 +176,33 @@ Main.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
+Matrix.obj: Matrix.cpp.obj
+
+.PHONY : Matrix.obj
+
+# target to build an object file
+Matrix.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.obj
+.PHONY : Matrix.cpp.obj
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
 Queue.obj: Queue.cpp.obj
 
 .PHONY : Queue.obj
@@ -272,6 +299,9 @@ help:
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
+	@echo ... Matrix.obj
+	@echo ... Matrix.i
+	@echo ... Matrix.s
 	@echo ... Queue.obj
 	@echo ... Queue.i
 	@echo ... Queue.s

@@ -15,8 +15,8 @@ private:
     */
     class Node {
     public:
-        Node *next;
-        int data;
+        Node *next{};
+        int data{};
 
         /**
          * @param num значение текущего элемента.
@@ -31,7 +31,7 @@ private:
     /**
     * Создаем первый элемент списка
     */
-    Node *first;
+    Node *first{};
 public:
     /**
      * Конструктор №1 (Пустой конструктор)
@@ -73,7 +73,7 @@ public:
      */
     int getHeadData() {
         if (first == nullptr)
-            return -91919191;
+            std::cerr << "Null Pointer Exception";
 
         return first->data;
     }
