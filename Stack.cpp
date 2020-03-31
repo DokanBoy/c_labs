@@ -36,7 +36,10 @@ private:
         delete[] array;
         array = newArray;
     }
-
+    
+    /**
+     * Уменьшаем массив на 10 элементов
+     */
     void reduce() {
         // TODO
     }
