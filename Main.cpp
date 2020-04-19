@@ -11,24 +11,24 @@ int main() {
 
     delete calculator;
 */
+    using namespace std;
 
     auto matrix = new Matrix<int>();
+    auto stack1 = new vector<int>();
+    auto stack2 = new vector<int>();
 
-    auto stack1 = new Stack<int>();
-    stack1->push(123);
-    stack1->push(4123);
-    stack1->push(123);
-    stack1->push(645);
-    stack1->push(45347);
+    stack1->push_back(123);
+    stack1->push_back(456);
+    stack1->push_back(789);
+
+    stack2->push_back(789);
+    stack2->push_back(456);
+    stack2->push_back(123);
 
     matrix->pushRow(*stack1);
-
-    auto stack2 = new Stack<int>();
-    stack2->push(123);
-    stack2->push(4123);
-    stack2->push(123);
-
     matrix->pushRow(*stack2);
+
+    matrix->print();
 
     return 0;
 }

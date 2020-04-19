@@ -1,32 +1,45 @@
 #include "Stack.cpp"
+#include <vector>
+#include <pbt.h>
+
 
 template<typename T>
 class Matrix {
 private:
-    Stack<Stack<T>> *matrix{};
-
+    std::vector<std::vector<T>> *matrix{};
 public:
     Matrix() {
-        matrix = new Stack<Stack<T>>();
+        matrix = new std::vector<std::vector<T>>();
     }
 
-    Stack<T> *getMatrix() {
+    std::vector<std::vector<T>> *getMatrix() {
         return matrix;
     }
 
-    Stack<T> getRowByIndex(unsigned int index) {
+    std::vector<std::vector<T>> getRowByIndex(unsigned int index) {
         return matrix->getByIndex(index);
     }
 
-    void pushRow(Stack<T> &row) {
-        matrix->push(row);
+    void pushRow(std::vector<T> row) {
+        matrix->push_back(row);
     }
 
-    Stack<T> top() {
-        matrix->top();
+    std::vector<std::vector<T>> topRow() {
+        matrix->at(matrix->size() - 1);
     }
 
-    Stack<T> pop() {
-        matrix->pop();
+    std::vector<std::vector<T>> popRow() {
+        matrix->pop_back();
+    }
+
+    void print() {
+        for (int i = 0; i < matrix->size(); ++i) {
+            std::vector<T> vec = matrix->at(i);
+            for (int j = 0; j < vec.size(); ++j) {
+                std::cout << vec.at(j) << " ";
+            }
+            std::cout << std::endl;
+            vec.clear();
+        }
     }
 };
