@@ -9,18 +9,14 @@
 C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp
 iostream
 -
-Matrix.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/Matrix.cpp
+PriorityQueue.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueue.cpp
 
-C:/Users/Zahar/CLionProjects/labs/untitled1/Matrix.cpp
-Stack.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueue.cpp
+iostream
+-
 vector
 -
-pbt.h
--
-
-C:/Users/Zahar/CLionProjects/labs/untitled1/Stack.cpp
-iostream
+algorithm
 -
 

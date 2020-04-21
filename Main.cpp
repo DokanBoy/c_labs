@@ -1,34 +1,27 @@
 #include <iostream>
-#include "Matrix.cpp"
+#include "PriorityQueue.cpp"
 
 /**
  * Примеры использования
  */
 
-int main() {
-/*
-    auto *calculator = new StackCalculator("21 + (2341 * (2 * 2) + 3 / (1 + 2)) * 2"); // Принимает любую строку
 
-    delete calculator;
-*/
+int main() {
     using namespace std;
 
-    auto matrix = new Matrix<int>();
-    auto stack1 = new vector<int>();
-    auto stack2 = new vector<int>();
+    auto pq = new PriorityQueue();
 
-    stack1->push_back(123);
-    stack1->push_back(456);
-    stack1->push_back(789);
+    pq->push(10);
+    pq->push(12);
+    pq->push(3);
 
-    stack2->push_back(789);
-    stack2->push_back(456);
-    stack2->push_back(123);
+    pq->print();
 
-    matrix->pushRow(*stack1);
-    matrix->pushRow(*stack2);
+    cout << pq->pop() << " " << endl;
+    cout << pq->pop() << " " << endl;
+    cout << pq->top() << " " << endl;
 
-    matrix->print();
+    pq->print();
 
     return 0;
 }

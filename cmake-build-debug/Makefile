@@ -122,33 +122,6 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-LinkedList.obj: LinkedList.cpp.obj
-
-.PHONY : LinkedList.obj
-
-# target to build an object file
-LinkedList.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/LinkedList.cpp.obj
-.PHONY : LinkedList.cpp.obj
-
-LinkedList.i: LinkedList.cpp.i
-
-.PHONY : LinkedList.i
-
-# target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
-
-LinkedList.s: LinkedList.cpp.s
-
-.PHONY : LinkedList.s
-
-# target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
-
 Main.obj: Main.cpp.obj
 
 .PHONY : Main.obj
@@ -176,113 +149,32 @@ Main.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
-Matrix.obj: Matrix.cpp.obj
+PriorityQueue.obj: PriorityQueue.cpp.obj
 
-.PHONY : Matrix.obj
-
-# target to build an object file
-Matrix.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.obj
-.PHONY : Matrix.cpp.obj
-
-Matrix.i: Matrix.cpp.i
-
-.PHONY : Matrix.i
-
-# target to preprocess a source file
-Matrix.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.i
-.PHONY : Matrix.cpp.i
-
-Matrix.s: Matrix.cpp.s
-
-.PHONY : Matrix.s
-
-# target to generate assembly for a file
-Matrix.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.s
-.PHONY : Matrix.cpp.s
-
-Queue.obj: Queue.cpp.obj
-
-.PHONY : Queue.obj
+.PHONY : PriorityQueue.obj
 
 # target to build an object file
-Queue.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Queue.cpp.obj
-.PHONY : Queue.cpp.obj
+PriorityQueue.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj
+.PHONY : PriorityQueue.cpp.obj
 
-Queue.i: Queue.cpp.i
+PriorityQueue.i: PriorityQueue.cpp.i
 
-.PHONY : Queue.i
-
-# target to preprocess a source file
-Queue.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Queue.cpp.i
-.PHONY : Queue.cpp.i
-
-Queue.s: Queue.cpp.s
-
-.PHONY : Queue.s
-
-# target to generate assembly for a file
-Queue.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Queue.cpp.s
-.PHONY : Queue.cpp.s
-
-Stack.obj: Stack.cpp.obj
-
-.PHONY : Stack.obj
-
-# target to build an object file
-Stack.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Stack.cpp.obj
-.PHONY : Stack.cpp.obj
-
-Stack.i: Stack.cpp.i
-
-.PHONY : Stack.i
+.PHONY : PriorityQueue.i
 
 # target to preprocess a source file
-Stack.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Stack.cpp.i
-.PHONY : Stack.cpp.i
+PriorityQueue.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.i
+.PHONY : PriorityQueue.cpp.i
 
-Stack.s: Stack.cpp.s
+PriorityQueue.s: PriorityQueue.cpp.s
 
-.PHONY : Stack.s
-
-# target to generate assembly for a file
-Stack.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Stack.cpp.s
-.PHONY : Stack.cpp.s
-
-StackCalculator.obj: StackCalculator.cpp.obj
-
-.PHONY : StackCalculator.obj
-
-# target to build an object file
-StackCalculator.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/StackCalculator.cpp.obj
-.PHONY : StackCalculator.cpp.obj
-
-StackCalculator.i: StackCalculator.cpp.i
-
-.PHONY : StackCalculator.i
-
-# target to preprocess a source file
-StackCalculator.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/StackCalculator.cpp.i
-.PHONY : StackCalculator.cpp.i
-
-StackCalculator.s: StackCalculator.cpp.s
-
-.PHONY : StackCalculator.s
+.PHONY : PriorityQueue.s
 
 # target to generate assembly for a file
-StackCalculator.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/StackCalculator.cpp.s
-.PHONY : StackCalculator.cpp.s
+PriorityQueue.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.s
+.PHONY : PriorityQueue.cpp.s
 
 # Help Target
 help:
@@ -293,24 +185,12 @@ help:
 	@echo ... untitled1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LinkedList.obj
-	@echo ... LinkedList.i
-	@echo ... LinkedList.s
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
-	@echo ... Matrix.obj
-	@echo ... Matrix.i
-	@echo ... Matrix.s
-	@echo ... Queue.obj
-	@echo ... Queue.i
-	@echo ... Queue.s
-	@echo ... Stack.obj
-	@echo ... Stack.i
-	@echo ... Stack.s
-	@echo ... StackCalculator.obj
-	@echo ... StackCalculator.i
-	@echo ... StackCalculator.s
+	@echo ... PriorityQueue.obj
+	@echo ... PriorityQueue.i
+	@echo ... PriorityQueue.s
 .PHONY : help
 
 

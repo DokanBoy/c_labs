@@ -1,13 +1,18 @@
-# c_labs
-Basic aglos. Laboratory work in C++. HCI NSU.
+# Priority Queue
+Basic data structure.
 
 ### Input data
 ```
-21+2341*(2*2)
+10
+12
+3
 ```
 
 ### Output data
 ```
-21 2341 2 2
-+ * ( * )
+3 10 12 <- PriorityQueue#print
+12 <- PriorityQueue#pop
+10 <- PriorityQueue#pop
+3 <- PriorityQueue#top
+3 <- PriorityQueue#print
 ```
