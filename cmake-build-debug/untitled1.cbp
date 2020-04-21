@@ -86,6 +86,9 @@
 		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueue.cpp">
 			<Option target="untitled1"/>
 		</Unit>
+		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV2.cpp">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

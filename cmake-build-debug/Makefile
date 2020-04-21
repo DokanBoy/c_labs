@@ -176,6 +176,33 @@ PriorityQueue.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.s
 .PHONY : PriorityQueue.cpp.s
 
+PriorityQueueV2.obj: PriorityQueueV2.cpp.obj
+
+.PHONY : PriorityQueueV2.obj
+
+# target to build an object file
+PriorityQueueV2.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj
+.PHONY : PriorityQueueV2.cpp.obj
+
+PriorityQueueV2.i: PriorityQueueV2.cpp.i
+
+.PHONY : PriorityQueueV2.i
+
+# target to preprocess a source file
+PriorityQueueV2.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.i
+.PHONY : PriorityQueueV2.cpp.i
+
+PriorityQueueV2.s: PriorityQueueV2.cpp.s
+
+.PHONY : PriorityQueueV2.s
+
+# target to generate assembly for a file
+PriorityQueueV2.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.s
+.PHONY : PriorityQueueV2.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +218,9 @@ help:
 	@echo ... PriorityQueue.obj
 	@echo ... PriorityQueue.i
 	@echo ... PriorityQueue.s
+	@echo ... PriorityQueueV2.obj
+	@echo ... PriorityQueueV2.i
+	@echo ... PriorityQueueV2.s
 .PHONY : help
 
 

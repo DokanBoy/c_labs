@@ -1,5 +1,7 @@
 #include <iostream>
-#include "PriorityQueue.cpp"
+//#include "PriorityQueue.cpp"
+#include "PriorityQueueV2.cpp"
+#include <ctime>
 
 /**
  * Примеры использования
@@ -9,20 +11,40 @@
 int main() {
     using namespace std;
 
-    auto pq = new PriorityQueue();
+    auto pq = new PriorityQueueV2();
+    int start, end;
 
-    pq->push(10);
-    pq->push(12);
-    pq->push(3);
+    start = clock();
 
-    pq->print();
+    for (int i = 0; i < 30000000; ++i) {
+        pq->push(rand());
+    }
 
-    cout << pq->pop() << " " << endl;
-    cout << pq->pop() << " " << endl;
-    cout << pq->top() << " " << endl;
+    end = clock();
+    cout << "PUSH x30M: " << end - start << "ms" << endl;
 
-    pq->print();
 
+    start = clock();
+
+    pq->pop();
+
+    end = clock();
+    cout << "#1 POP x1: " << end - start << "ms" << endl;
+
+
+    start = clock();
+
+    pq->pop();
+
+    end = clock();
+    cout << "#2 POP x1: " << end - start << "ms" << endl;
+
+    start = clock();
+
+    pq->pop();
+
+    end = clock();
+    cout << "#3 POP x1: " << end - start << "ms" << endl;
     return 0;
 }
 
