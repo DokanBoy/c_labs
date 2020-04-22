@@ -10,7 +10,7 @@ private:
         int rightChild;
         int largestChild;
 
-        for (;;) {
+        while (true) {
             leftChild = 2 * i + 1;
             rightChild = 2 * i + 2;
             largestChild = i;
