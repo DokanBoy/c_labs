@@ -26,6 +26,27 @@ public:
         binaryHeap->getHeapSize();
     }
 
+    void print10First() {
+        for (int num : *binaryHeap->get10First()) {
+            std::cout << num << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    void print10Middle() {
+        for (int num : *binaryHeap->get10Middle()) {
+            std::cout << num << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    void print10Last() {
+        for (int num : *binaryHeap->get10Last()) {
+            std::cout << num << " ";
+        }
+        std::cout << std::endl;
+    }
+
     void print() {
         for (int i = 0; i < binaryHeap->getHeapSize(); ++i) {
             std::cout << binaryHeap->getMax() << " ";

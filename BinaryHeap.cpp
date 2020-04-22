@@ -77,4 +77,33 @@ public:
             heapify(i);
         }
     }
+
+    std::vector<int> *get10First() {
+        auto *result = new std::vector<int>();
+        for (int i = 0; i < 10; ++i) {
+            result->push_back(heap->at(i));
+        }
+
+        return result;
+    }
+
+    std::vector<int> *get10Middle() {
+        auto *result = new std::vector<int>();
+        for (int i = getHeapSize() / 2 - 10; i < getHeapSize() / 2; ++i) {
+            result->push_back(heap->at(i));
+        }
+
+        return result;
+    }
+
+    std::vector<int> *get10Last() {
+        auto *result = new std::vector<int>();
+        for (int i = getHeapSize() - 10; i < getHeapSize(); ++i) {
+            result->push_back(heap->at(i));
+        }
+
+        return result;
+    }
+
+
 };

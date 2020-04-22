@@ -37,6 +37,19 @@ public:
         }
 
         end = clock();
-        cout << "POP-PUSH x10k: " << end - start << "ms" << endl;
+        cout << "POP-PUSH x10K: " << end - start << "ms" << endl;
+    }
+
+    void testCorrectness() {
+        using namespace std;
+
+        cout << "10 First: ";
+        pq->print10First();
+
+        cout << "10 Middle: ";
+        pq->print10Middle();
+
+        cout << "10 Last: ";
+        pq->print10Last();
     }
 };
