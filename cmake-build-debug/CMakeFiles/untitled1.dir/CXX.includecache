@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp
-iostream
--
-PriorityQueueV2.cpp
-C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV2.cpp
-ctime
--
-
-C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV2.cpp
-iostream
+C:/Users/Zahar/CLionProjects/labs/untitled1/BinaryHeap.cpp
+algorithm
 -
 vector
 -
-algorithm
+
+C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp
+iostream
+-
+PriorityQueueV3Test.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3Test.cpp
+
+C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3.cpp
+vector
+-
+iostream
+-
+BinaryHeap.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/BinaryHeap.cpp
+
+C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3Test.cpp
+PriorityQueueV3.cpp
+C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3.cpp
+ctime
+-
+random
 -
 

@@ -1,50 +1,16 @@
 #include <iostream>
-//#include "PriorityQueue.cpp"
-#include "PriorityQueueV2.cpp"
-#include <ctime>
+#include "PriorityQueueV3Test.cpp"
 
 /**
  * Примеры использования
  */
 
-
 int main() {
-    using namespace std;
+    auto *pqTest = new PriorityQueueV3Test();
 
-    auto pq = new PriorityQueueV2();
-    int start, end;
+    pqTest->testTime();
 
-    start = clock();
-
-    for (int i = 0; i < 30000000; ++i) {
-        pq->push(rand());
-    }
-
-    end = clock();
-    cout << "PUSH x30M: " << end - start << "ms" << endl;
-
-
-    start = clock();
-
-    pq->pop();
-
-    end = clock();
-    cout << "#1 POP x1: " << end - start << "ms" << endl;
-
-
-    start = clock();
-
-    pq->pop();
-
-    end = clock();
-    cout << "#2 POP x1: " << end - start << "ms" << endl;
-
-    start = clock();
-
-    pq->pop();
-
-    end = clock();
-    cout << "#3 POP x1: " << end - start << "ms" << endl;
+    delete pqTest;
     return 0;
 }
 

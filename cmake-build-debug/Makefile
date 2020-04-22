@@ -122,6 +122,33 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+BinaryHeap.obj: BinaryHeap.cpp.obj
+
+.PHONY : BinaryHeap.obj
+
+# target to build an object file
+BinaryHeap.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj
+.PHONY : BinaryHeap.cpp.obj
+
+BinaryHeap.i: BinaryHeap.cpp.i
+
+.PHONY : BinaryHeap.i
+
+# target to preprocess a source file
+BinaryHeap.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/BinaryHeap.cpp.i
+.PHONY : BinaryHeap.cpp.i
+
+BinaryHeap.s: BinaryHeap.cpp.s
+
+.PHONY : BinaryHeap.s
+
+# target to generate assembly for a file
+BinaryHeap.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/BinaryHeap.cpp.s
+.PHONY : BinaryHeap.cpp.s
+
 Main.obj: Main.cpp.obj
 
 .PHONY : Main.obj
@@ -203,6 +230,60 @@ PriorityQueueV2.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.s
 .PHONY : PriorityQueueV2.cpp.s
 
+PriorityQueueV3.obj: PriorityQueueV3.cpp.obj
+
+.PHONY : PriorityQueueV3.obj
+
+# target to build an object file
+PriorityQueueV3.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj
+.PHONY : PriorityQueueV3.cpp.obj
+
+PriorityQueueV3.i: PriorityQueueV3.cpp.i
+
+.PHONY : PriorityQueueV3.i
+
+# target to preprocess a source file
+PriorityQueueV3.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.i
+.PHONY : PriorityQueueV3.cpp.i
+
+PriorityQueueV3.s: PriorityQueueV3.cpp.s
+
+.PHONY : PriorityQueueV3.s
+
+# target to generate assembly for a file
+PriorityQueueV3.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.s
+.PHONY : PriorityQueueV3.cpp.s
+
+PriorityQueueV3Test.obj: PriorityQueueV3Test.cpp.obj
+
+.PHONY : PriorityQueueV3Test.obj
+
+# target to build an object file
+PriorityQueueV3Test.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj
+.PHONY : PriorityQueueV3Test.cpp.obj
+
+PriorityQueueV3Test.i: PriorityQueueV3Test.cpp.i
+
+.PHONY : PriorityQueueV3Test.i
+
+# target to preprocess a source file
+PriorityQueueV3Test.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.i
+.PHONY : PriorityQueueV3Test.cpp.i
+
+PriorityQueueV3Test.s: PriorityQueueV3Test.cpp.s
+
+.PHONY : PriorityQueueV3Test.s
+
+# target to generate assembly for a file
+PriorityQueueV3Test.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.s
+.PHONY : PriorityQueueV3Test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,6 +293,9 @@ help:
 	@echo ... untitled1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... BinaryHeap.obj
+	@echo ... BinaryHeap.i
+	@echo ... BinaryHeap.s
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
@@ -221,6 +305,12 @@ help:
 	@echo ... PriorityQueueV2.obj
 	@echo ... PriorityQueueV2.i
 	@echo ... PriorityQueueV2.s
+	@echo ... PriorityQueueV3.obj
+	@echo ... PriorityQueueV3.i
+	@echo ... PriorityQueueV3.s
+	@echo ... PriorityQueueV3Test.obj
+	@echo ... PriorityQueueV3Test.i
+	@echo ... PriorityQueueV3Test.s
 .PHONY : help
 
 
