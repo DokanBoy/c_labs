@@ -80,22 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/BinaryHeap.cpp">
+		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/Horse.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/HorseTest.cpp">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp">
 			<Option target="untitled1"/>
 		</Unit>
-		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueue.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV2.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3Test.cpp">
+		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/Matrix.cpp">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="C:/Users/Zahar/CLionProjects/labs/untitled1/CMakeLists.txt">

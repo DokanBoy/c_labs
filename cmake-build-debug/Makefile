@@ -122,32 +122,59 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-BinaryHeap.obj: BinaryHeap.cpp.obj
+Horse.obj: Horse.cpp.obj
 
-.PHONY : BinaryHeap.obj
+.PHONY : Horse.obj
 
 # target to build an object file
-BinaryHeap.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj
-.PHONY : BinaryHeap.cpp.obj
+Horse.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Horse.cpp.obj
+.PHONY : Horse.cpp.obj
 
-BinaryHeap.i: BinaryHeap.cpp.i
+Horse.i: Horse.cpp.i
 
-.PHONY : BinaryHeap.i
+.PHONY : Horse.i
 
 # target to preprocess a source file
-BinaryHeap.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/BinaryHeap.cpp.i
-.PHONY : BinaryHeap.cpp.i
+Horse.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Horse.cpp.i
+.PHONY : Horse.cpp.i
 
-BinaryHeap.s: BinaryHeap.cpp.s
+Horse.s: Horse.cpp.s
 
-.PHONY : BinaryHeap.s
+.PHONY : Horse.s
 
 # target to generate assembly for a file
-BinaryHeap.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/BinaryHeap.cpp.s
-.PHONY : BinaryHeap.cpp.s
+Horse.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Horse.cpp.s
+.PHONY : Horse.cpp.s
+
+HorseTest.obj: HorseTest.cpp.obj
+
+.PHONY : HorseTest.obj
+
+# target to build an object file
+HorseTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/HorseTest.cpp.obj
+.PHONY : HorseTest.cpp.obj
+
+HorseTest.i: HorseTest.cpp.i
+
+.PHONY : HorseTest.i
+
+# target to preprocess a source file
+HorseTest.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/HorseTest.cpp.i
+.PHONY : HorseTest.cpp.i
+
+HorseTest.s: HorseTest.cpp.s
+
+.PHONY : HorseTest.s
+
+# target to generate assembly for a file
+HorseTest.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/HorseTest.cpp.s
+.PHONY : HorseTest.cpp.s
 
 Main.obj: Main.cpp.obj
 
@@ -176,113 +203,32 @@ Main.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
-PriorityQueue.obj: PriorityQueue.cpp.obj
+Matrix.obj: Matrix.cpp.obj
 
-.PHONY : PriorityQueue.obj
-
-# target to build an object file
-PriorityQueue.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj
-.PHONY : PriorityQueue.cpp.obj
-
-PriorityQueue.i: PriorityQueue.cpp.i
-
-.PHONY : PriorityQueue.i
-
-# target to preprocess a source file
-PriorityQueue.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.i
-.PHONY : PriorityQueue.cpp.i
-
-PriorityQueue.s: PriorityQueue.cpp.s
-
-.PHONY : PriorityQueue.s
-
-# target to generate assembly for a file
-PriorityQueue.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueue.cpp.s
-.PHONY : PriorityQueue.cpp.s
-
-PriorityQueueV2.obj: PriorityQueueV2.cpp.obj
-
-.PHONY : PriorityQueueV2.obj
+.PHONY : Matrix.obj
 
 # target to build an object file
-PriorityQueueV2.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj
-.PHONY : PriorityQueueV2.cpp.obj
+Matrix.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.obj
+.PHONY : Matrix.cpp.obj
 
-PriorityQueueV2.i: PriorityQueueV2.cpp.i
+Matrix.i: Matrix.cpp.i
 
-.PHONY : PriorityQueueV2.i
-
-# target to preprocess a source file
-PriorityQueueV2.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.i
-.PHONY : PriorityQueueV2.cpp.i
-
-PriorityQueueV2.s: PriorityQueueV2.cpp.s
-
-.PHONY : PriorityQueueV2.s
-
-# target to generate assembly for a file
-PriorityQueueV2.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.s
-.PHONY : PriorityQueueV2.cpp.s
-
-PriorityQueueV3.obj: PriorityQueueV3.cpp.obj
-
-.PHONY : PriorityQueueV3.obj
-
-# target to build an object file
-PriorityQueueV3.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj
-.PHONY : PriorityQueueV3.cpp.obj
-
-PriorityQueueV3.i: PriorityQueueV3.cpp.i
-
-.PHONY : PriorityQueueV3.i
+.PHONY : Matrix.i
 
 # target to preprocess a source file
-PriorityQueueV3.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.i
-.PHONY : PriorityQueueV3.cpp.i
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
 
-PriorityQueueV3.s: PriorityQueueV3.cpp.s
+Matrix.s: Matrix.cpp.s
 
-.PHONY : PriorityQueueV3.s
-
-# target to generate assembly for a file
-PriorityQueueV3.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.s
-.PHONY : PriorityQueueV3.cpp.s
-
-PriorityQueueV3Test.obj: PriorityQueueV3Test.cpp.obj
-
-.PHONY : PriorityQueueV3Test.obj
-
-# target to build an object file
-PriorityQueueV3Test.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj
-.PHONY : PriorityQueueV3Test.cpp.obj
-
-PriorityQueueV3Test.i: PriorityQueueV3Test.cpp.i
-
-.PHONY : PriorityQueueV3Test.i
-
-# target to preprocess a source file
-PriorityQueueV3Test.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.i
-.PHONY : PriorityQueueV3Test.cpp.i
-
-PriorityQueueV3Test.s: PriorityQueueV3Test.cpp.s
-
-.PHONY : PriorityQueueV3Test.s
+.PHONY : Matrix.s
 
 # target to generate assembly for a file
-PriorityQueueV3Test.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.s
-.PHONY : PriorityQueueV3Test.cpp.s
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
 
 # Help Target
 help:
@@ -293,24 +239,18 @@ help:
 	@echo ... untitled1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... BinaryHeap.obj
-	@echo ... BinaryHeap.i
-	@echo ... BinaryHeap.s
+	@echo ... Horse.obj
+	@echo ... Horse.i
+	@echo ... Horse.s
+	@echo ... HorseTest.obj
+	@echo ... HorseTest.i
+	@echo ... HorseTest.s
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
-	@echo ... PriorityQueue.obj
-	@echo ... PriorityQueue.i
-	@echo ... PriorityQueue.s
-	@echo ... PriorityQueueV2.obj
-	@echo ... PriorityQueueV2.i
-	@echo ... PriorityQueueV2.s
-	@echo ... PriorityQueueV3.obj
-	@echo ... PriorityQueueV3.i
-	@echo ... PriorityQueueV3.s
-	@echo ... PriorityQueueV3Test.obj
-	@echo ... PriorityQueueV3Test.i
-	@echo ... PriorityQueueV3Test.s
+	@echo ... Matrix.obj
+	@echo ... Matrix.i
+	@echo ... Matrix.s
 .PHONY : help
 
 

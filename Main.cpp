@@ -1,16 +1,14 @@
-#include <iostream>
-#include "PriorityQueueV3Test.cpp"
+#include "HorseTest.cpp"
 
 /**
  * Примеры использования
  */
 
 int main() {
-    auto *pqTest = new PriorityQueueV3Test();
+    auto *ht = new HorseTest();
+    ht->test();
+    delete ht;
 
-    pqTest->testTime();
-
-    delete pqTest;
     return 0;
 }
 

@@ -4,12 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Zahar/CLionProjects/labs/untitled1/BinaryHeap.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj"
+  "C:/Users/Zahar/CLionProjects/labs/untitled1/Horse.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/Horse.cpp.obj"
+  "C:/Users/Zahar/CLionProjects/labs/untitled1/HorseTest.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/HorseTest.cpp.obj"
   "C:/Users/Zahar/CLionProjects/labs/untitled1/Main.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/Main.cpp.obj"
-  "C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueue.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj"
-  "C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV2.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj"
-  "C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj"
-  "C:/Users/Zahar/CLionProjects/labs/untitled1/PriorityQueueV3Test.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj"
+  "C:/Users/Zahar/CLionProjects/labs/untitled1/Matrix.cpp" "C:/Users/Zahar/CLionProjects/labs/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/Matrix.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj"
+  "CMakeFiles/untitled1.dir/Horse.cpp.obj"
+  "CMakeFiles/untitled1.dir/HorseTest.cpp.obj"
   "CMakeFiles/untitled1.dir/Main.cpp.obj"
-  "CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj"
-  "CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj"
-  "CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj"
-  "CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj"
+  "CMakeFiles/untitled1.dir/Matrix.cpp.obj"
   "libuntitled1.dll.a"
   "untitled1.exe"
   "untitled1.exe.manifest"

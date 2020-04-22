@@ -69,94 +69,64 @@ CMakeFiles/untitled1.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Main.cpp -o CMakeFiles\untitled1.dir\Main.cpp.s
 
-CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj: ../PriorityQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\PriorityQueue.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueue.cpp
+CMakeFiles/untitled1.dir/Horse.cpp.obj: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/Horse.cpp.obj: ../Horse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/Horse.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Horse.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\Horse.cpp
 
-CMakeFiles/untitled1.dir/PriorityQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/PriorityQueue.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueue.cpp > CMakeFiles\untitled1.dir\PriorityQueue.cpp.i
+CMakeFiles/untitled1.dir/Horse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/Horse.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\Horse.cpp > CMakeFiles\untitled1.dir\Horse.cpp.i
 
-CMakeFiles/untitled1.dir/PriorityQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/PriorityQueue.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueue.cpp -o CMakeFiles\untitled1.dir\PriorityQueue.cpp.s
+CMakeFiles/untitled1.dir/Horse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Horse.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Horse.cpp -o CMakeFiles\untitled1.dir\Horse.cpp.s
 
-CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj: ../PriorityQueueV2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\PriorityQueueV2.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV2.cpp
+CMakeFiles/untitled1.dir/Matrix.cpp.obj: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/Matrix.cpp.obj: ../Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled1.dir/Matrix.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Matrix.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\Matrix.cpp
 
-CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV2.cpp > CMakeFiles\untitled1.dir\PriorityQueueV2.cpp.i
+CMakeFiles/untitled1.dir/Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/Matrix.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\Matrix.cpp > CMakeFiles\untitled1.dir\Matrix.cpp.i
 
-CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV2.cpp -o CMakeFiles\untitled1.dir\PriorityQueueV2.cpp.s
+CMakeFiles/untitled1.dir/Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Matrix.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Matrix.cpp -o CMakeFiles\untitled1.dir\Matrix.cpp.s
 
-CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj: ../BinaryHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\BinaryHeap.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\BinaryHeap.cpp
+CMakeFiles/untitled1.dir/HorseTest.cpp.obj: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/HorseTest.cpp.obj: ../HorseTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled1.dir/HorseTest.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\HorseTest.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\HorseTest.cpp
 
-CMakeFiles/untitled1.dir/BinaryHeap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/BinaryHeap.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\BinaryHeap.cpp > CMakeFiles\untitled1.dir\BinaryHeap.cpp.i
+CMakeFiles/untitled1.dir/HorseTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/HorseTest.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\HorseTest.cpp > CMakeFiles\untitled1.dir\HorseTest.cpp.i
 
-CMakeFiles/untitled1.dir/BinaryHeap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/BinaryHeap.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\BinaryHeap.cpp -o CMakeFiles\untitled1.dir\BinaryHeap.cpp.s
-
-CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj: ../PriorityQueueV3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\PriorityQueueV3.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV3.cpp
-
-CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV3.cpp > CMakeFiles\untitled1.dir\PriorityQueueV3.cpp.i
-
-CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV3.cpp -o CMakeFiles\untitled1.dir\PriorityQueueV3.cpp.s
-
-CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj: ../PriorityQueueV3Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\PriorityQueueV3Test.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV3Test.cpp
-
-CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV3Test.cpp > CMakeFiles\untitled1.dir\PriorityQueueV3Test.cpp.i
-
-CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\PriorityQueueV3Test.cpp -o CMakeFiles\untitled1.dir\PriorityQueueV3Test.cpp.s
+CMakeFiles/untitled1.dir/HorseTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/HorseTest.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\HorseTest.cpp -o CMakeFiles\untitled1.dir\HorseTest.cpp.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
 "CMakeFiles/untitled1.dir/Main.cpp.obj" \
-"CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj" \
-"CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj" \
-"CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj" \
-"CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj" \
-"CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj"
+"CMakeFiles/untitled1.dir/Horse.cpp.obj" \
+"CMakeFiles/untitled1.dir/Matrix.cpp.obj" \
+"CMakeFiles/untitled1.dir/HorseTest.cpp.obj"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1.exe: CMakeFiles/untitled1.dir/Main.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/PriorityQueue.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/PriorityQueueV2.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/BinaryHeap.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/PriorityQueueV3.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/PriorityQueueV3Test.cpp.obj
+untitled1.exe: CMakeFiles/untitled1.dir/Horse.cpp.obj
+untitled1.exe: CMakeFiles/untitled1.dir/Matrix.cpp.obj
+untitled1.exe: CMakeFiles/untitled1.dir/HorseTest.cpp.obj
 untitled1.exe: CMakeFiles/untitled1.dir/build.make
 untitled1.exe: CMakeFiles/untitled1.dir/linklibs.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/objects1.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable untitled1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable untitled1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
