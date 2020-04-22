@@ -1,0 +1,566 @@
+Index: StackCalculator.cpp
+===================================================================
+--- StackCalculator.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
++++ StackCalculator.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
+@@ -1,139 +0,0 @@
+-#include "Stack.cpp"
+-#include <string>
+-#include <regex>
+-
+-#define PLUS_MINUS_PRIORITY = 1;
+-#define MULTIPLICATION_DIVISION_PRIORITY = 2;
+-#define BRACKETS_PRIORITY = 3;
+-
+-/**
+- * Стэковый калькулятор
+- *
+- * @see https://www.youtube.com/watch?v=Vk-tGND2bfc&t=175s
+- */
+-
+-
+-class StackCalculator {
+-private:
+-    Stack<int> *nums{};
+-    Stack<char> *operators{};
+-    int answer{};
+-
+-    int getOperatorPriority(char element) {
+-        switch (element) {
+-            case '(' :
+-                return 1;
+-            case ')' :
+-                return 2;
+-            case '=' :
+-                return 3;
+-            case '+' :
+-            case '-' :
+-                return 4;
+-            case '*' :
+-            case '/' :
+-                return 5;
+-            case '^' :
+-                return 6;
+-            default:
+-                return 0;
+-        }
+-    }
+-
+-    void parse(const std::string &expression) {
+-        std::string builder{};
+-        bool prevIsNum = false; // Предыдущий символ - число?
+-
+-        for (const char &i : expression) {
+-            if (isNum(i)) {
+-                builder.append(&i);
+-                prevIsNum = true;
+-            } else if (isOperator(i)) {
+-                if (!prevIsNum) {
+-                    operators->push(i);
+-                    prevIsNum = false;
+-                } else {
+-                    nums->push(std::stoi(builder));
+-                    operators->push(i);
+-                    builder.clear();
+-                    prevIsNum = false;
+-                }
+-            }
+-        }
+-        nums->push(std::stoi(builder));
+-    }
+-
+-    // Тута считаем из наших стеков
+-    int calculate() {
+-        return nums->top();
+-    }
+-
+-public:
+-    StackCalculator() {
+-        std::cerr << "Not enough parameters" << std::endl;
+-    }
+-
+-    explicit StackCalculator(const std::string &inputExpression) {
+-        if (inputExpression.empty()) {
+-            std::cerr << "You can't pass an empty string" << std::endl;
+-            return;
+-        }
+-
+-        nums = new Stack<int>();
+-        operators = new Stack<char>();
+-
+-        std::cout << "Input expression: " << inputExpression << std::endl;
+-
+-        parse(inputExpression);
+-        answer = calculate();
+-
+-        std::cout << "Num stack: ";
+-        nums->printer();
+-
+-        std::cout << "Operators stack: ";
+-        operators->printer();
+-    }
+-
+-    ~StackCalculator() {
+-        delete nums;
+-        delete operators;
+-    }
+-
+-    // TODO Заменить на regex
+-    static bool isOperator(char element) {
+-        //std::regex operatorsRegex("()+-*/");
+-        //return std::regex_match(element.begin(), element.end(), operatorsRegex);
+-        return (element == '(') ||
+-               (element == ')') ||
+-               (element == '+') ||
+-               (element == '-') ||
+-               (element == '*') ||
+-               (element == '/');
+-    }
+-
+-    // TODO Заменить на regex
+-    static bool isNum(char element) {
+-        //std::regex numsRegex("[0-9]");
+-        //return std::regex_match(element.begin(), element.end(), numsRegex);
+-        return (element == '0') ||
+-               (element == '1') ||
+-               (element == '2') ||
+-               (element == '3') ||
+-               (element == '4') ||
+-               (element == '5') ||
+-               (element == '6') ||
+-               (element == '7') ||
+-               (element == '8') ||
+-               (element == '9');
+-    }
+-
+-    // TODO Заменить на regex
+-    static bool isBracket(char element) {
+-        return (element == '(') ||
+-               (element == ')');
+-    }
+-
+-    [[maybe_unused]] [[nodiscard]] int getAnswer() const {
+-        return answer;
+-    }
+-};
+\ No newline at end of file
+Index: Stack.cpp
+===================================================================
+--- Stack.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
++++ Stack.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
+@@ -1,128 +0,0 @@
+-#include <iostream>
+-
+-/**
+- * Стэки
+- *
+- * @see https://codelessons.ru/cplusplus/realizaciya-steka-stack-v-c.html (в самом низу есть рассказ о реализации,
+- * как у меня)
+- *
+- * Создаем пустой массив, а потом с помощью метода push можно будет запихивать элементы.
+- * С помощью pop получаем и удаляем верхний элемент. С помощью top получаем верхний элемент
+-*/
+-template<typename T>
+-class Stack {
+-private:
+-    // Начальный размер стэка.
+-    const int DEFAULT_LENGTH = 100;
+-
+-    // Текущий размер стэка
+-    int currentMaxSize = DEFAULT_LENGTH;
+-    // Текущее кол-во элементов
+-    int currentSize = 0;
+-
+-    // тот самый массив, куда будем запихивать новые элементы
+-    T *array;
+-
+-    /**
+-     * Увеличиваем массив на 10 элементов
+-     */
+-    void grow() {
+-        currentMaxSize += 10;
+-        T *newArray = new T[currentMaxSize];
+-
+-        for (int i = 0; i < currentSize; ++i) {
+-            newArray[i] = array[i];
+-        }
+-        delete[] array;
+-        array = newArray;
+-    }
+-
+-    /**
+-     * Уменьшаем массив на 10 элементов
+-     */
+-    void reduce() {
+-        // TODO
+-    }
+-
+-public:
+-    /**
+-     * Конструктор №1 (Конструктор создающий пустой стэк)
+-    */
+-    Stack() {
+-        array = new T[currentMaxSize];
+-    }
+-
+-    /**
+-     * Конструктор №2 (Конструктор принимающий значение первого элемента)
+-     * @param num - первый элемент
+-     *
+-     * Создаем массив и пушим(запихиваем) туда наш первый элемент
+-    */
+-    explicit Stack(int size) {
+-        currentMaxSize = size;
+-        array = new T[currentMaxSize];
+-    }
+-
+-    /**
+-     * Деструктор. Удаляем массив со стэком
+-     */
+-    ~Stack() {
+-        delete[] array;
+-    }
+-
+-    /**
+-     * @param element элемент, который нужно запихнуть в стэк
+-     */
+-    void push(T element) {
+-        if (currentSize >= currentMaxSize) {
+-            grow();
+-        }
+-
+-        array[currentSize] = element;
+-        ++currentSize;
+-    }
+-
+-    /**
+-     * Снимаем верхний элемент в стэки
+-     * Получаем и удаляем(!)
+-     */
+-    T pop() {
+-        return array[--currentSize];
+-    }
+-
+-    /**
+-     * Берем верхний элемент в стэки
+-     * Получаем без(!) удаления
+-     */
+-    T top() {
+-        return array[currentSize - 1];
+-    }
+-
+-    /**
+-     * Стэк пустой?
+-     * true - да
+-     * false - нет
+-     */
+-    bool isEmpty() {
+-        return currentSize == 0;
+-    }
+-
+-    /**
+-     * Печатаем стэк на экран.
+-     * Проходим по каждому эмеленту и если он не nullptr, то печатаем его.
+-     */
+-    void printer() {
+-        for (int i = 0; i < currentSize; ++i) {
+-            std::cout << array[i] << " ";;
+-        }
+-        std::cout << std::endl;
+-    }
+-
+-    T *getAsArray() {
+-        return array;
+-    }
+-
+-    T getByIndex(unsigned int index) {
+-        return array[index];
+-    }
+-};
+Index: Matrix.cpp
+===================================================================
+--- Matrix.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
++++ Matrix.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
+@@ -1,45 +0,0 @@
+-#include "Stack.cpp"
+-#include <vector>
+-#include <pbt.h>
+-
+-
+-template<typename T>
+-class Matrix {
+-private:
+-    std::vector<std::vector<T>> *matrix{};
+-public:
+-    Matrix() {
+-        matrix = new std::vector<std::vector<T>>();
+-    }
+-
+-    std::vector<std::vector<T>> *getMatrix() {
+-        return matrix;
+-    }
+-
+-    std::vector<std::vector<T>> getRowByIndex(unsigned int index) {
+-        return matrix->getByIndex(index);
+-    }
+-
+-    void pushRow(std::vector<T> row) {
+-        matrix->push_back(row);
+-    }
+-
+-    std::vector<std::vector<T>> topRow() {
+-        matrix->at(matrix->size() - 1);
+-    }
+-
+-    std::vector<std::vector<T>> popRow() {
+-        matrix->pop_back();
+-    }
+-
+-    void print() {
+-        for (int i = 0; i < matrix->size(); ++i) {
+-            std::vector<T> vec = matrix->at(i);
+-            for (int j = 0; j < vec.size(); ++j) {
+-                std::cout << vec.at(j) << " ";
+-            }
+-            std::cout << std::endl;
+-            vec.clear();
+-        }
+-    }
+-};
+\ No newline at end of file
+Index: LinkedList.cpp
+===================================================================
+--- LinkedList.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
++++ LinkedList.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
+@@ -1,152 +0,0 @@
+-#include <iostream>
+-
+-/**
+- * @author Zahar
+- * @date 15.03.2020
+- *
+- * Лаба #3
+-*/
+-class LinkedList {
+-private:
+-    /**
+-    * Вложенный класс, который хранит адрес след. элемента(Node - ноды) и значение текущего.
+-    * Важно уточнит, что класс хранит именно АДРЕС следущего значения в памяти.
+-    * А значение(data) - это числовое значение текущего элемента.
+-    */
+-    class Node {
+-    public:
+-        Node *next{};
+-        int data{};
+-
+-        /**
+-         * @param num значение текущего элемента.
+-         * Адрес след. элемента устанавливается на nullptr, что означает, что следущего элемента просто не существует.
+-         */
+-        Node(int num) {
+-            data = num;
+-            next = nullptr;
+-        }
+-    };
+-
+-    /**
+-    * Создаем первый элемент списка
+-    */
+-    Node *first{};
+-public:
+-    /**
+-     * Конструктор №1 (Пустой конструктор)
+-     *
+-     * Создаем класс-обертку, который будет работать с Node.
+-     * Значение первого элемента устанавливается на nullptr
+-     */
+-    LinkedList() {
+-        first = nullptr;
+-    }
+-
+-    /**
+-     * Конструктор №2 (Конструктор принимающий значение первого элемента)
+-     * @param num - первый элемент
+-     *
+-     * Создаем класс-обертку, который будет работать с Node.
+-     * Значение второго элемента устанавливается на nullptr(его отсутсвие).
+-    */
+-    LinkedList(int num) {
+-        first->data = num;
+-        first->next = nullptr;
+-    }
+-
+-    /**
+-     * Деструктор. Удаляем всю цепочку элменетов массива
+-     */
+-    ~LinkedList() {
+-        Node *currNode;
+-        while (first) {
+-            currNode = first;
+-            first = first->next;
+-            delete currNode;
+-        }
+-    }
+-
+-    /**
+-     * @return получаем значение первого элемента
+-     * Если него не сущестуем, то возвращаем -91919191
+-     */
+-    int getHeadData() {
+-        if (first == nullptr)
+-            std::cerr << "Null Pointer Exception";
+-
+-        return first->data;
+-    }
+-
+-    /**
+-    * @return получаем удаленный элемент
+-    * Если него не сущестуем, то возвращаем -91919191
+-    */
+-    int removeFirstNode() {
+-        if (first == nullptr)
+-            return -91919191;
+-
+-        Node *temp = first;
+-        first = first->next;
+-
+-        delete temp;
+-        return first->data;
+-    }
+-
+-    /**
+-     * @param num число, добавляемое в начало
+-     *
+-     * Создаем новый элемент, в после next передаем текущий элемент, а в data - записываем число, переданное в параметре
+-     */
+-    void appendFirst(int num) {
+-        Node *newList = new Node(num);
+-        newList->next = first;
+-        first = newList;
+-    }
+-
+-    /**
+-     * @param num число, добавляемое в конец
+-    */
+-    void appendEnd(int num) {
+-        if (!first)
+-            appendFirst(num);
+-        else {
+-            Node *curr;
+-            for (curr = first; curr->next; curr = curr->next);
+-
+-            curr->next = new Node(num);
+-        }
+-    }
+-
+-    bool inList(int num) {
+-        for (Node *curr = first; curr; curr = curr->next) {
+-            if (curr->data == num)
+-                return true;
+-        }
+-        return false;
+-    }
+-
+-    /**
+-     * Печатаем список на экран.
+-     * Просто проходим по каждому эмеленту и если он не nullptr, то печатаем его.
+-     */
+-    void printer() {
+-        for (Node *curr = first; curr; curr = curr->next) {
+-            std::cout << curr->data << " ";
+-        }
+-        std::cout << std::endl;
+-    }
+-
+-    /**
+-    * Узнаем размер списка
+-    * Просто проходим по каждому эмеленту и если он не nullptr, то увеличиваем счетчик на 1.
+-    */
+-    int size() {
+-        int counter = 0;
+-        for (Node *curr = first; curr; curr = curr->next) {
+-            ++counter;
+-        }
+-        return counter;
+-    }
+-};
+-
+Index: Queue.cpp
+===================================================================
+--- Queue.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
++++ Queue.cpp	(revision abdbe073388a59320e21a4ab85ecab031abcf501)
+@@ -1,75 +0,0 @@
+-#include <iostream>
+-
+-using namespace std;
+-
+-class Queue {
+-private:
+-    const int SIZE = 100;
+-    int *queue;
+-    int frnt, rear;
+-
+-public:
+-    Queue() {
+-        queue = new int[SIZE];
+-        frnt = rear = 0;
+-    }
+-
+-    ~Queue() {
+-        delete[] queue;
+-    }
+-
+-    //Помещение элемента в очередь
+-    void push(int num) {
+-        if (rear + 1 == frnt || (rear + 1 == SIZE && !frnt)) {
+-            cout << "очередь полна" << endl;
+-            return;
+-        }
+-        rear++;
+-        if (rear == SIZE) rear = 0;
+-        queue[rear] = num;
+-    }
+-
+-    //Вывод элементов очереди
+-    void out() {
+-        for (int i = frnt + 1; i < rear + 1; i++)
+-            cout << " " << queue[i];
+-    }
+-
+-    //Определение размера очереди
+-    int size() {
+-        int s = 0;
+-        for (int i = frnt; i < rear; i++)
+-            s++;
+-        return s;
+-    }
+-
+-    // Извлечение элемента из очереди
+-    void pop() {
+-        if (frnt == rear) {
+-            cout << "очередь пуста" << endl;
+-            return;
+-        }
+-
+-        frnt++;
+-        if (frnt == SIZE) frnt = 0;
+-    }
+-
+-    // Последний элемент очереди
+-    int back() {
+-        return queue[rear];
+-    }
+-
+-    // Первый элемент очереди
+-    int front() {
+-        return queue[frnt + 1];
+-    }
+-
+-    bool inQueue(int num) {
+-        for (int i = 0; i < SIZE; ++i) {
+-            if (queue[i] == num) {
+-                return true;
+-            }
+-        }
+-        return false;
+-    }
+-};
