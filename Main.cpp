@@ -5,6 +5,7 @@
  */
 
 int main() {
+
     auto *ht = new HorseTest();
     ht->test();
     delete ht;
