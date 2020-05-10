@@ -3,4 +3,4 @@ project(untitled1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(untitled1 Main.cpp Horse.cpp Matrix.cpp HorseTest.cpp)
+add_executable(untitled1 Main.cpp Queen.cpp QueenTest.cpp)

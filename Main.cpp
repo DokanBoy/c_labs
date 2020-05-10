@@ -1,4 +1,4 @@
-#include "HorseTest.cpp"
+#include "QueenTest.cpp"
 
 /**
  * Примеры использования
@@ -6,9 +6,9 @@
 
 int main() {
 
-    auto *ht = new HorseTest();
-    ht->test();
-    delete ht;
+    auto *qt = new QueenTest();
+    qt->test();
+    delete qt;
 
     return 0;
 }
