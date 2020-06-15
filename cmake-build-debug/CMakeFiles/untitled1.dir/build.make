@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.5428.21\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.6668.126\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\Zahar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.5428.21\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Zahar\CLionProjects\labs\untitled1
+CMAKE_SOURCE_DIR = C:\Users\Zahar\CLionProjects\labs\C_labs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Zahar\CLionProjects\labs\C_labs\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled1.dir/depend.make
@@ -58,105 +58,30 @@ include CMakeFiles/untitled1.dir/flags.make
 
 CMakeFiles/untitled1.dir/Main.cpp.obj: CMakeFiles/untitled1.dir/flags.make
 CMakeFiles/untitled1.dir/Main.cpp.obj: ../Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/Main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Main.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\C_labs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled1.dir/Main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Main.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\C_labs\Main.cpp
 
 CMakeFiles/untitled1.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/Main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\Main.cpp > CMakeFiles\untitled1.dir\Main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\C_labs\Main.cpp > CMakeFiles\untitled1.dir\Main.cpp.i
 
 CMakeFiles/untitled1.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Main.cpp -o CMakeFiles\untitled1.dir\Main.cpp.s
-
-CMakeFiles/untitled1.dir/LinkedList.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/LinkedList.cpp.obj: ../LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/LinkedList.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\LinkedList.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\LinkedList.cpp
-
-CMakeFiles/untitled1.dir/LinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/LinkedList.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\LinkedList.cpp > CMakeFiles\untitled1.dir\LinkedList.cpp.i
-
-CMakeFiles/untitled1.dir/LinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/LinkedList.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\LinkedList.cpp -o CMakeFiles\untitled1.dir\LinkedList.cpp.s
-
-CMakeFiles/untitled1.dir/Stack.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/Stack.cpp.obj: ../Stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled1.dir/Stack.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Stack.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\Stack.cpp
-
-CMakeFiles/untitled1.dir/Stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/Stack.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\Stack.cpp > CMakeFiles\untitled1.dir\Stack.cpp.i
-
-CMakeFiles/untitled1.dir/Stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Stack.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Stack.cpp -o CMakeFiles\untitled1.dir\Stack.cpp.s
-
-CMakeFiles/untitled1.dir/Queue.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/Queue.cpp.obj: ../Queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled1.dir/Queue.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Queue.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\Queue.cpp
-
-CMakeFiles/untitled1.dir/Queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/Queue.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\Queue.cpp > CMakeFiles\untitled1.dir\Queue.cpp.i
-
-CMakeFiles/untitled1.dir/Queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Queue.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Queue.cpp -o CMakeFiles\untitled1.dir\Queue.cpp.s
-
-CMakeFiles/untitled1.dir/StackCalculator.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/StackCalculator.cpp.obj: ../StackCalculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled1.dir/StackCalculator.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\StackCalculator.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\StackCalculator.cpp
-
-CMakeFiles/untitled1.dir/StackCalculator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/StackCalculator.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\StackCalculator.cpp > CMakeFiles\untitled1.dir\StackCalculator.cpp.i
-
-CMakeFiles/untitled1.dir/StackCalculator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/StackCalculator.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\StackCalculator.cpp -o CMakeFiles\untitled1.dir\StackCalculator.cpp.s
-
-CMakeFiles/untitled1.dir/Matrix.cpp.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/Matrix.cpp.obj: ../Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled1.dir/Matrix.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled1.dir\Matrix.cpp.obj -c C:\Users\Zahar\CLionProjects\labs\untitled1\Matrix.cpp
-
-CMakeFiles/untitled1.dir/Matrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/Matrix.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Zahar\CLionProjects\labs\untitled1\Matrix.cpp > CMakeFiles\untitled1.dir\Matrix.cpp.i
-
-CMakeFiles/untitled1.dir/Matrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/Matrix.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\untitled1\Matrix.cpp -o CMakeFiles\untitled1.dir\Matrix.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Zahar\CLionProjects\labs\C_labs\Main.cpp -o CMakeFiles\untitled1.dir\Main.cpp.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/Main.cpp.obj" \
-"CMakeFiles/untitled1.dir/LinkedList.cpp.obj" \
-"CMakeFiles/untitled1.dir/Stack.cpp.obj" \
-"CMakeFiles/untitled1.dir/Queue.cpp.obj" \
-"CMakeFiles/untitled1.dir/StackCalculator.cpp.obj" \
-"CMakeFiles/untitled1.dir/Matrix.cpp.obj"
+"CMakeFiles/untitled1.dir/Main.cpp.obj"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1.exe: CMakeFiles/untitled1.dir/Main.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/LinkedList.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/Stack.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/Queue.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/StackCalculator.cpp.obj
-untitled1.exe: CMakeFiles/untitled1.dir/Matrix.cpp.obj
 untitled1.exe: CMakeFiles/untitled1.dir/build.make
 untitled1.exe: CMakeFiles/untitled1.dir/linklibs.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/objects1.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable untitled1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Zahar\CLionProjects\labs\C_labs\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable untitled1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +94,6 @@ CMakeFiles/untitled1.dir/clean:
 .PHONY : CMakeFiles/untitled1.dir/clean
 
 CMakeFiles/untitled1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Zahar\CLionProjects\labs\untitled1 C:\Users\Zahar\CLionProjects\labs\untitled1 C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug C:\Users\Zahar\CLionProjects\labs\untitled1\cmake-build-debug\CMakeFiles\untitled1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Zahar\CLionProjects\labs\C_labs C:\Users\Zahar\CLionProjects\labs\C_labs C:\Users\Zahar\CLionProjects\labs\C_labs\cmake-build-debug C:\Users\Zahar\CLionProjects\labs\C_labs\cmake-build-debug C:\Users\Zahar\CLionProjects\labs\C_labs\cmake-build-debug\CMakeFiles\untitled1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled1.dir/depend
 

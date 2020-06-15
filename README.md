@@ -3,11 +3,12 @@ Basic aglos. Laboratory work in C++. HCI NSU.
 
 ### Input data
 ```
-21+2341*(2*2)
+3 2 1
+0 1 1
+4 0 1
+2 1 0
 ```
 
 ### Output data
-```
-21 2341 2 2
-+ * ( * )
+Min distance: 3
 ```
