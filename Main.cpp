@@ -8,7 +8,7 @@ const int INFINITY = INT8_MAX;
 
 int main() {
     int num, start, finish;
-    cout << "Number, start, finish apex: " << endl;
+    cout << "Number, start, finish vertex: " << endl;
     cin >> num >> start >> finish;
     start--;
     finish--;
@@ -26,27 +26,27 @@ int main() {
     priority_queue <pair<int, int>> pairsQueue;
     pairsQueue.push(make_pair(0, start));
 
-    int len, apex;
+    int len, vertex;
     while (!pairsQueue.empty()) {
         len = -pairsQueue.top().first;
-        apex = pairsQueue.top().second;
+        vertex = pairsQueue.top().second;
         pairsQueue.pop();
 
-        if (len > distances.at(apex))
+        if (len > distances.at(vertex))
             continue;
 
         for (int i = 0; i < num; i++) {
             int to = i;
-            int length = a.at(apex).at(i);
-            if (distances.at(to) > distances.at(apex) + length && length >= 0) {
-                distances.at(to) = distances.at(apex) + length;
+            int length = a.at(vertex).at(i);
+            if (distances.at(to) > distances.at(vertex) + length && length >= 0) {
+                distances.at(to) = distances.at(vertex) + length;
                 pairsQueue.push(make_pair(-distances.at(to), to));
             }
         }
     }
 
     if (distances.at(finish) == INFINITY)
-        cout << "Can't get to that apex";
+        cout << "Can't get to that vertex";
     else
         cout << "Min distance: " << distances.at(finish);
 
