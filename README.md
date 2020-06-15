@@ -10,5 +10,6 @@ Basic aglos. Laboratory work in C++. HCI NSU.
 ```
 
 ### Output data
+```
 Min distance: 3
 ```
