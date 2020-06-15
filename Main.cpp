@@ -1,34 +1,19 @@
-#include <iostream>
-#include "Matrix.cpp"
+#include "Queue.cpp"
 
 /**
  * Примеры использования
  */
 
 int main() {
-/*
-    auto *calculator = new StackCalculator("21 + (2341 * (2 * 2) + 3 / (1 + 2)) * 2"); // Принимает любую строку
+    auto queue = new Queue<int>();
+    queue->add(10);
+    queue->add(1);
+    queue->add(3);
+    queue->add(-14);
 
-    delete calculator;
-*/
-    using namespace std;
-
-    auto matrix = new Matrix<int>();
-    auto stack1 = new vector<int>();
-    auto stack2 = new vector<int>();
-
-    stack1->push_back(123);
-    stack1->push_back(456);
-    stack1->push_back(789);
-
-    stack2->push_back(789);
-    stack2->push_back(456);
-    stack2->push_back(123);
-
-    matrix->pushRow(*stack1);
-    matrix->pushRow(*stack2);
-
-    matrix->print();
+    while (!queue->isEmpty()) {
+        std::cout << queue->peak() << ", ";
+    }
 
     return 0;
 }

@@ -3,4 +3,4 @@ project(untitled1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(untitled1 Main.cpp LinkedList.cpp Stack.cpp Queue.cpp StackCalculator.cpp Matrix.cpp)
+add_executable(untitled1 Main.cpp LinkedList.cpp Queue.cpp)

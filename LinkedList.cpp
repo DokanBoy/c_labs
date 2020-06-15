@@ -6,6 +6,7 @@
  *
  * Лаба #3
 */
+template<typename T>
 class LinkedList {
 private:
     /**
@@ -16,14 +17,14 @@ private:
     class Node {
     public:
         Node *next{};
-        int data{};
+        T data{};
 
         /**
          * @param num значение текущего элемента.
          * Адрес след. элемента устанавливается на nullptr, что означает, что следущего элемента просто не существует.
          */
-        Node(int num) {
-            data = num;
+        explicit Node(T e) {
+            data = e;
             next = nullptr;
         }
     };
@@ -44,18 +45,6 @@ public:
     }
 
     /**
-     * Конструктор №2 (Конструктор принимающий значение первого элемента)
-     * @param num - первый элемент
-     *
-     * Создаем класс-обертку, который будет работать с Node.
-     * Значение второго элемента устанавливается на nullptr(его отсутсвие).
-    */
-    LinkedList(int num) {
-        first->data = num;
-        first->next = nullptr;
-    }
-
-    /**
      * Деструктор. Удаляем всю цепочку элменетов массива
      */
     ~LinkedList() {
@@ -67,49 +56,15 @@ public:
         }
     }
 
-    /**
-     * @return получаем значение первого элемента
-     * Если него не сущестуем, то возвращаем -91919191
-     */
-    int getHeadData() {
-        if (first == nullptr)
-            std::cerr << "Null Pointer Exception";
-
-        return first->data;
-    }
-
-    /**
-    * @return получаем удаленный элемент
-    * Если него не сущестуем, то возвращаем -91919191
-    */
-    int removeFirstNode() {
-        if (first == nullptr)
-            return -91919191;
-
-        Node *temp = first;
-        first = first->next;
-
-        delete temp;
-        return first->data;
-    }
-
-    /**
-     * @param num число, добавляемое в начало
-     *
-     * Создаем новый элемент, в после next передаем текущий элемент, а в data - записываем число, переданное в параметре
-     */
-    void appendFirst(int num) {
-        Node *newList = new Node(num);
+    void addFirst(T e) {
+        Node *newList = new Node(e);
         newList->next = first;
         first = newList;
     }
 
-    /**
-     * @param num число, добавляемое в конец
-    */
-    void appendEnd(int num) {
+    void addLast(T num) {
         if (!first)
-            appendFirst(num);
+            addFirst(num);
         else {
             Node *curr;
             for (curr = first; curr->next; curr = curr->next);
@@ -118,9 +73,33 @@ public:
         }
     }
 
-    bool inList(int num) {
+    T getFirst() {
+        return first->data;
+    }
+
+    T getLast() {
         for (Node *curr = first; curr; curr = curr->next) {
-            if (curr->data == num)
+            if (curr->next == nullptr) {
+                std::cout << "getLast: " << curr->data << std::endl;
+                printer();
+                return curr->data;
+            }
+        }
+    }
+
+    void removeFirst() {
+        if (first == nullptr)
+            return;
+
+        Node *temp = first;
+        first = first->next;
+
+        delete temp;
+    }
+
+    bool contains(T e) {
+        for (Node *curr = first; curr; curr = curr->next) {
+            if (curr->data == e)
                 return true;
         }
         return false;
@@ -147,6 +126,10 @@ public:
             ++counter;
         }
         return counter;
+    }
+
+    bool isEmpty() {
+        return first == nullptr;
     }
 };
 
